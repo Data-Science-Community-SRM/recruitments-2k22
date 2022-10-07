@@ -1,38 +1,75 @@
-.App {
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+nav img{
+  width: 50px;
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+}
+nav li{
+  margin: 0 0.5rem;
+}
+nav a{
+  padding: 0 0.5rem;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+
+/* Domains Styling */
+
+
+.domains, .events{
+  min-height: 100vh;
+  padding: 4rem 5vw 0 5vw;
+  background-color: #232323;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.domains h1, .events h1{
+  font-size: 40px;
+  color: #6F389F;
+  font-family: 'Roboto', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.events h2{
+  display: flex;
+  align-items: center;
+  border: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.events img{
+  margin-right: 1rem;
+}
+.domains section, .events section{
+  max-width: 992px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  text-align: left;
+  color: #FFFFFF;
+  padding: 2rem 0;
 }
-
-.App-link {
-  color: #61dafb;
+section h2{
+  padding: 5px 0;
+  border-bottom: 5px solid #6F389F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section p{
+  margin: 2rem 0 0 0;
+  font-size: 20px;
+}
+section ul {
+  font-size: 25px;
+}
+section li{
+  margin: 1rem 0;
 }

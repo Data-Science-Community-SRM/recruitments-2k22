@@ -1,8 +1,15 @@
+//import gsap from "gsap";
 import './App.css';
-
+import Navbar from './Components/Navbar';
+import Domains from './Components/Domains';
+import Events from './Components/Events';
 function App() {
     return (
-        <h1>Recruitments 2k22</h1>
+        <div>
+            <Navbar />
+            <Domains />
+            <Events />
+        </div>
     );
 }
 
