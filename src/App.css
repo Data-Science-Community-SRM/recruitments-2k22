@@ -1,9 +1,14 @@
+/*Navbar*/
+
+
 nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
   padding: 0.25rem 1rem;
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -26,7 +31,74 @@ nav a{
 }
 
 
-/* Domains Styling */
+/* Landing */
+
+
+.landing{
+  min-height: 100vh;
+  background-image: url("img/Landing.png");
+  position: relative;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.landing::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.26) 100%);
+  z-index: -1;
+}
+.landing h1{
+  margin: 0;
+  padding: 0;
+  font-family: "Earth Orbiter";
+  font-weight: 100;
+  font-size: 7vw;
+  color: #FFFFFF;
+}
+.landing p, .landing-button{
+  font-size: 3vh;
+  font-family: "Earth Orbiter";
+}
+.landing p{
+  color: #FFFFFF;
+  margin-bottom: 4rem;
+}
+.landing-button{
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 1rem 2rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+.landing-button:hover{
+  color: #FFFFFF;
+  background: none;
+}
+@media (max-width: 576px) {
+  .landing h1{
+    font-size: 34px;
+  }
+  .landing p{
+    font-size: 14px;
+  }
+  .landing img{
+    width: 130px;
+  }
+  .landing-button{
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+/* Domains and Event Styling */
 
 
 .domains, .events{
@@ -72,4 +144,57 @@ section ul {
 }
 section li{
   margin: 1rem 0;
+}
+
+
+/* Footer */
+
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  margin: 0;
+  padding: 3rem 4rem;
+  background-color: #232323;
+  border-bottom: 25px solid #6F389F;
+}
+footer img{
+  width: 91px;
+}
+footer section{
+  display: flex;
+  align-items: center;
+}
+footer p{
+  margin: 0;
+  padding: 0;
+  color: #6F389F;
+  font-size: 22px;
+}
+footer h3{
+  color: #FFFFFF;
+  font-size: 23px;
+}
+.footer-button{
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 0.75rem 2rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.footer-button:hover{
+  color: #FFFFFF;
+  background: none;
+}
+@media (max-width: 576px) {
+  footer{
+    justify-content: center;
+  }
+  .footer-button{
+    margin-bottom: 2rem;
+  }
 }

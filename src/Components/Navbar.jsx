@@ -6,8 +6,8 @@ function Navbar(){
             <a href="https://www.dscommunity.in"><img src={Logo} alt="Data Science Community" /></a>
             <ul>
                 <li><a href="#domains">Domains</a></li>
-                <li><a href="#domain">Events</a></li>
-                <li><a href="#domain">Apply 🚀</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#Apply">Apply 🚀</a></li>
             </ul>
         </nav>
     )
