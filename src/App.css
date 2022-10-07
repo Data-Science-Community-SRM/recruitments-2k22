@@ -43,6 +43,7 @@ nav a{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1rem;
 }
 .landing::before{
   content: '';
@@ -99,15 +100,32 @@ nav a{
 
 
 /* Domains and Event Styling */
+.particle{
+  position: relative;
+}
 
+#tsparticles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 .domains, .events{
   min-height: 100vh;
-  padding: 4rem 5vw 0 5vw;
   background-color: #232323;
   text-align: center;
+  position: relative;
+}
+.domains{
+  padding: 4rem 5vw 0 5vw;
+}
+.events{
+  padding: 0 5vw 4rem 5vw;
 }
 .domains h1, .events h1{
+  margin: 0;
   font-size: 40px;
   color: #6F389F;
   font-family: 'Roboto', sans-serif;

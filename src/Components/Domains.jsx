@@ -1,5 +1,7 @@
 import React from "react";
 import gsap from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Domains(){
     const domains = [
         {
@@ -20,9 +22,25 @@ function Domains(){
     ];
     let domainsRef = React.useRef(null);
     React.useEffect(()=>{
-        let ctx = gsap.context(()=>{
-            gsap.from(".heading", {opacity: 0, y: 20, delay: 0.2});
-            gsap.to(".heading", {opacity: 1, y: 0, delay: 0.2});
+        gsap.context(()=>{
+            gsap.fromTo(".heading", 
+            {
+                opacity: 0, 
+                y: 20, 
+                scrollTrigger: {
+                    trigger: ".heading",
+                    toggleAttribute: "restart none none none"
+                }
+            }, 
+            {
+                opacity: 1, 
+                y: 0, 
+                duration: 1,
+                scrollTrigger: {
+                    trigger: ".heading",
+                    toggleAttribute: "restart none none none"
+                }
+            });
             gsap.from(".domain", {opacity: 0, x: -20, });
             gsap.to(".domain", {opacity: 1, x: 0, delay: 0.2 });
         }, domainsRef);

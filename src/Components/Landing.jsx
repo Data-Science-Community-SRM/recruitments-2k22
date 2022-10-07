@@ -1,11 +1,15 @@
 import React from "react";
 import gsap from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import logo from "../img/Logo.svg";
+gsap.registerPlugin(ScrollTrigger);
 function Landing() {
     let imgRef = React.useRef(null);
     React.useEffect(()=>{
-        gsap.from(imgRef, {rotate: 0, duration: 10});
-        gsap.to(imgRef, {rotate: 360});
+        gsap.to(imgRef, {
+            rotate: 360, 
+            duration: 20,
+        });
     }, []);
     return (
         <div className="landing">
