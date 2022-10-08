@@ -30,7 +30,7 @@ function Landing() {
       <h1 className="content">Recruitments 2K22</h1>
       <p className="content">Data Science Community</p>
       <PopupButton
-        id=""
+        id="gSkbTCDo"
         style={{ fontSize: 20 }}
         className="my-button landing-button content"
       >

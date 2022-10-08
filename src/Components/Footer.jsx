@@ -14,8 +14,8 @@ function Footer() {
         </h3>
       </section>
       <PopupButton
-        id=""
-        style={{ fontSize: 20 }}
+        id="gSkbTCDo"
+        style={{ fontSize: 15 }}
         className="my-button footer-button"
       >
         Apply 🚀
