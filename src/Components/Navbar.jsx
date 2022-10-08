@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../img/Logo.svg";
+import { PopupButton } from "@typeform/embed-react";
+
 function Navbar() {
   return (
     <nav>
@@ -14,7 +16,13 @@ function Navbar() {
           <a href="#events">Events</a>
         </li>
         <li>
-          <a href="#Apply">Apply 🚀</a>
+          <PopupButton
+            id=""
+            style={{ fontSize: 15 }}
+            className="my-button nav-typform-btn"
+          >
+            Apply 🚀
+          </PopupButton>
         </li>
       </ul>
     </nav>

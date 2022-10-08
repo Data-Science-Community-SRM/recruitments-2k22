@@ -58,6 +58,16 @@ nav a{
   font-size: 15px;
   color: #FFFFFF;
 }
+.nav-typform-btn{
+    padding: 0 0.5rem;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: #FFFFFF;
+        background: none;
+        border: none;
+        cursor: pointer;
+}
 
 
 /* Landing */
@@ -66,6 +76,7 @@ nav a{
 .landing{
   min-height: 100vh;
   background-image: url("img/Landing.png");
+  background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
@@ -110,6 +121,7 @@ nav a{
   padding: 1rem 2rem;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
+  cursor: pointer;
 }
 .landing-button:hover{
   color: #FFFFFF;
@@ -237,6 +249,7 @@ footer h3{
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   font-size: 20px;
+cursor: pointer;
 }
 .footer-button:hover{
   color: #FFFFFF;

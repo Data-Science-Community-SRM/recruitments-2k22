@@ -2,6 +2,8 @@ import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "../img/Logo.svg";
+import { PopupButton } from "@typeform/embed-react";
+
 gsap.registerPlugin(ScrollTrigger);
 function Landing() {
   let landingRef = React.useRef(null);
@@ -27,9 +29,13 @@ function Landing() {
       </a>
       <h1 className="content">Recruitments 2K22</h1>
       <p className="content">Data Science Community</p>
-      <a href="#Apply" className="landing-button content">
+      <PopupButton
+        id=""
+        style={{ fontSize: 20 }}
+        className="my-button landing-button content"
+      >
         Apply 🚀
-      </a>
+      </PopupButton>
     </div>
   );
 }
