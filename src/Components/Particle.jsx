@@ -13,6 +13,7 @@ function Particle(){
             init={particlesInit}
             options={{
                 fullScreen: { enable: false },
+                background: {color: "#232323"},
                 width: 100,
                 height: 400,
                 fpsLimit: 120,
@@ -45,7 +46,7 @@ function Particle(){
                     enable: true,
                     area: 800,
                     },
-                    value: 80,
+                    value: 40,
                 },
                 opacity: {
                     value: 0.5,
