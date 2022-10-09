@@ -5,19 +5,19 @@ function Domains() {
     {
       heading: "Technical",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium placeat repellat laborum, eaque temporibus sed ea quas explicabo, suscipit provident officiis praesentium! Molestiae quis id impedit, maxime consequuntur, delectus nam enim incidunt doloremque quod, commodi sit ut beatae dolorum obcaecati voluptate vel? Asperiores adipisci veritatis itaque doloribus aliquid sequi.",
+        "The entire universe is made of atoms. Similarly, tech is the atom of our universe. The technical domain is the heart & soul of the community. It is the domain that builds innovative projects that aim to solve real-time problems. At the same time, it provides an opportunity to collaborate with others and grow in specific sub-domains.",
       subDomains: ["AI/ML", "Blockchain", "Web Dev"],
     },
     {
       heading: "Creatives",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium placeat repellat laborum, eaque temporibus sed ea quas explicabo, suscipit provident officiis praesentium! Molestiae quis id impedit, maxime consequuntur, delectus nam enim incidunt doloremque quod, commodi sit ut beatae dolorum obcaecati voluptate vel? Asperiores adipisci veritatis itaque doloribus aliquid sequi.",
+        "This place is full of Lunar-tics who bring their creative pallets to color the pitch-black space. The creative domain offers you a chance to add your own ring to the decorative world with your VFX and GFX skills as there's no Saturn-ing back here!",
       subDomains: ["Graphic Designing", "VFX"],
     },
     {
       heading: "Corporate",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusantium placeat repellat laborum, eaque temporibus sed ea quas explicabo, suscipit provident officiis praesentium! Molestiae quis id impedit, maxime consequuntur, delectus nam enim incidunt doloremque quod, commodi sit ut beatae dolorum obcaecati voluptate vel? Asperiores adipisci veritatis itaque doloribus aliquid sequi.",
+        "The sun is the center of our solar system, and its gravity, like our corporate domain, holds the entire solar system together.It collaborates closely with the technical and creative teams on everything from content curation to sponsorship negotiations.",
       subDomains: [
         "Content",
         "Sponsorship",
