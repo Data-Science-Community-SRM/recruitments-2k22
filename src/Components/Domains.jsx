@@ -61,9 +61,7 @@ function Domains() {
 
   return (
     <div className="domains" id="domains" ref={(el) => (domainsRef = el)}>
-      <h1 className="heading">
-        <span style={{ color: "#6F389F" }}>D</span>OMAINS
-      </h1>
+      <h1 className="heading">DOMAINS</h1>
       {domains.map((domain) => {
         return (
           <section className="domain">
