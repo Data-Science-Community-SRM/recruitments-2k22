@@ -15,7 +15,6 @@ function Navbar() {
            justifyContent: "space-between",
            background: "#232323",
          },
-         duration: 1,
          scrollTrigger: {
            trigger: navRef,
            start: "center top",
@@ -27,7 +26,7 @@ function Navbar() {
        scrollTrigger: {
          trigger: navRef,
          start: "center top",
-         toggleActions: "play none reverse none",
+         toggleActions: "play none reverse reverse",
       }
       })
     })
@@ -38,6 +37,9 @@ function Navbar() {
         <img src={Logo} alt="Data Science Community" />
       </a>
       <ul>
+        <li>
+          <a href="#focus">Focus</a>
+        </li>
         <li>
           <a href="#domains">Domains</a>
         </li>

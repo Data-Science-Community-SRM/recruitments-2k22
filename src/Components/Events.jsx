@@ -58,9 +58,7 @@ function Event() {
   }, []);
   return (
     <div className="events" id="events" ref={(el) => (eventsRef = el)}>
-      <h1 className="heading">
-        <span style={{ color: "#6F389F" }}>E</span>VENTS
-      </h1>
+      <h1 className="heading">EVENTS</h1>
       {events.map((event) => {
         return (
           <section className="event">

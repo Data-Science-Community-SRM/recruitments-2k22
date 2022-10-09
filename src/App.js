@@ -7,6 +7,7 @@ import Landing from './Components/Landing';
 import Footer from './Components/Footer';
 import Particle from './Components/Particle';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Focus from "./Components/Focus";
 gsap.registerPlugin(ScrollTrigger);
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Navbar />
             <Landing />
             <div className='particle'>
+                <Focus />
                 <Domains />
                 <Events />
                 <Particle />
