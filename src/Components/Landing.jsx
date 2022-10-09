@@ -18,7 +18,7 @@ function Landing() {
           ".content",
           { opacity: 0, y: 50 },
           { opacity: 1, y: 0, duration: 0.5, stagger: 0.1 },
-          "<1"
+          "<.5"
         );
     }, landingRef);
   }, []);

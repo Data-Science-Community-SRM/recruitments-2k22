@@ -27,10 +27,28 @@ function Event() {
   let eventsRef = React.useRef(null);
   React.useEffect(() => {
     gsap.context(() => {
-      gsap.from(".heading", { opacity: 0, y: 20, delay: 0.2 });
-      gsap.to(".heading", { opacity: 1, y: 0, delay: 0.2 });
-      gsap.from(".domain", { opacity: 0, x: -20 });
-      gsap.to(".domain", { opacity: 1, x: 0, delay: 0.2 });
+      gsap.fromTo(".heading",{opacity: 0, y: 20,},
+        {
+          opacity: 1,
+          y: 0,
+          duration: .8,
+          scrollTrigger: {
+            trigger: ".heading",
+          },
+        }
+      );
+      gsap.utils.toArray(".event").forEach((event) => {
+        gsap.fromTo(event, {opacity: 0, x: -100}, 
+          {
+            opacity: 1,
+            x: 0,
+            duration: .8,
+            scrollTrigger: {
+              trigger: event,
+              start: "top center",
+            }
+          });
+      })
     }, eventsRef);
   }, []);
   return (
@@ -39,14 +57,13 @@ function Event() {
       {events.map((event) => {
         return (
           <section className="event">
-            <h2>
+            <h2 className="heading">
               <img src={event.img} alt={event.heading} /> {event.heading}
             </h2>
             <p>{event.description}</p>
           </section>
         );
       })}
-      ;
     </div>
   );
 }
