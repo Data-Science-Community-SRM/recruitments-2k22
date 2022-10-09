@@ -27,33 +27,40 @@ function Event() {
   let eventsRef = React.useRef(null);
   React.useEffect(() => {
     gsap.context(() => {
-      gsap.fromTo(".heading",{opacity: 0, y: 20,},
+      gsap.fromTo(
+        ".heading",
+        { opacity: 0, y: 20 },
         {
           opacity: 1,
           y: 0,
-          duration: .8,
+          duration: 0.8,
           scrollTrigger: {
             trigger: ".heading",
           },
         }
       );
       gsap.utils.toArray(".event").forEach((event) => {
-        gsap.fromTo(event, {opacity: 0, x: -100}, 
+        gsap.fromTo(
+          event,
+          { opacity: 0, x: -100 },
           {
             opacity: 1,
             x: 0,
-            duration: .8,
+            duration: 0.8,
             scrollTrigger: {
               trigger: event,
               start: "top center",
-            }
-          });
-      })
+            },
+          }
+        );
+      });
     }, eventsRef);
   }, []);
   return (
     <div className="events" id="events" ref={(el) => (eventsRef = el)}>
-      <h1 className="heading"> Events </h1>
+      <h1 className="heading">
+        <span style={{ color: "#6F389F" }}>E</span>VENTS
+      </h1>
       {events.map((event) => {
         return (
           <section className="event">

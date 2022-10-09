@@ -173,8 +173,9 @@ nav a:active{
 .domains h1, .events h1{
   margin: 0;
   font-size: 38px;
-  color: #6F389F;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
 }
 .events h2{
   display: flex;

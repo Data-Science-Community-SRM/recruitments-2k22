@@ -29,34 +29,41 @@ function Domains() {
   let domainsRef = React.useRef(null);
   React.useEffect(() => {
     gsap.context(() => {
-      gsap.fromTo(".heading",{opacity: 0,y: 100,},
+      gsap.fromTo(
+        ".heading",
+        { opacity: 0, y: 100 },
         {
           opacity: 1,
           y: 0,
-          duration: .8,
+          duration: 0.8,
           scrollTrigger: {
             trigger: ".heading",
           },
         }
       );
       gsap.utils.toArray(".domain").forEach((domain) => {
-        gsap.fromTo(domain, {opacity: 0, x: -100}, 
+        gsap.fromTo(
+          domain,
+          { opacity: 0, x: -100 },
           {
             opacity: 1,
             x: 0,
-            duration: .8,
+            duration: 0.8,
             scrollTrigger: {
               trigger: domain,
-              start: "top center"
-            }
-          });
-      })
+              start: "top center",
+            },
+          }
+        );
+      });
     }, domainsRef);
   }, []);
 
   return (
     <div className="domains" id="domains" ref={(el) => (domainsRef = el)}>
-      <h1 className="heading">Domains</h1>
+      <h1 className="heading">
+        <span style={{ color: "#6F389F" }}>D</span>OMAINS
+      </h1>
       {domains.map((domain) => {
         return (
           <section className="domain">
