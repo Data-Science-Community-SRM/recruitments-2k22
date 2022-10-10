@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Earth Orbiter' !important;
+        src: 
+            url('./fonts/earthorbiter.ttf') format('truetype'),
+            /* Safari, Android, iOS */
+}
+
 /*Scrollbar*/
 
 
@@ -106,6 +113,7 @@ nav a:active{
   margin: 0;
   padding: 0;
   font-family: "Earth Orbiter";
+  text-align: center;
   font-weight: 100;
   font-size: 7vw;
   color: #FFFFFF;
@@ -146,6 +154,12 @@ nav a:active{
   .landing-button{
     padding: 0.5rem 1rem;
   }
+  .logo {
+    display: none;
+    }
+    .nav-btn{
+    display: none;
+    }
 }
 
 
