@@ -28,7 +28,7 @@ function Landing() {
         <img src={logo} alt="Data Science Community" id="logo" />
       </a>
       <h1 className="content">Recruitments 2K22</h1>
-      <p className="content">Data Science Community</p>
+      <p className="content">Data Science Community SRM</p>
       <PopupButton
         id="gSkbTCDo"
         style={{ fontSize: 20 }}
