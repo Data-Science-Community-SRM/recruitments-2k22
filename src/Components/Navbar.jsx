@@ -11,12 +11,7 @@ function Navbar() {
         .timeline()
         .fromTo(
           navRef,
-          { opacity: 0, yPercent: 100 },
-          { opacity: 1, yPercent: 0, duration: 1, delay: 0.5 }
-        )
-        .fromTo(
-          navRef,
-          { css: { justifyContent: "center", background: "none" } },
+          { css: { justifyContent: "center", background: "transparent" } },
           {
             css: {
               justifyContent: "space-between",
@@ -24,8 +19,8 @@ function Navbar() {
             },
             scrollTrigger: {
               trigger: navRef,
-              start: "center top",
-              toggleActions: "play none reverse none",
+              start: "top top",
+              toggleActions: "play complete reverse reverse",
             },
           }
         )
@@ -36,8 +31,8 @@ function Navbar() {
             css: { display: "block" },
             scrollTrigger: {
               trigger: navRef,
-              start: "center top",
-              toggleActions: "play none reverse reverse",
+              start: "top top",
+              toggleActions: "play complete reverse reverse",
             },
           }
         );
