@@ -211,6 +211,8 @@ nav a:active{
 
 
 /* Domains and Event Styling */
+
+
 .particle{
   position: relative;
 }
@@ -274,6 +276,11 @@ section ul {
 }
 section li{
   margin: 1rem 0;
+}
+@media (max-width: 576px){
+  #tsparticles{
+    display: none;
+  }
 }
 
 
