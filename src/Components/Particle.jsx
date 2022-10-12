@@ -16,7 +16,7 @@ function Particle(){
                 background: {color: "#232323"},
                 width: 100,
                 height: 400,
-                fpsLimit: 120,
+                fpsLimit: 24,
                 particles: {
                 color: {
                     value: "#ffffff",

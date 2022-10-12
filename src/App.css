@@ -139,6 +139,43 @@ nav a:active{
   color: #FFFFFF;
   background: none;
 }
+.timer-container{
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  font-family: "Earth Orbiter";
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  z-index: 2;
+}
+.timer-container p{
+  margin: 0;
+  font-size: 18px;
+}
+.timer{
+  margin-left: 1rem;
+}
+.clock, .clock section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock section{
+  padding: 1rem;
+  background-color: #272727;
+  width: 30px;
+  border-radius: 5px;
+  font-family: "Earth Orbiter";
+  font-size: 18px;
+}
+.clock p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
 @media (max-width: 576px) {
   .landing h1{
     font-size: 34px;
@@ -155,9 +192,16 @@ nav a:active{
   .logo {
     display: none;
     }
-    .nav-btn{
-    display: none;
-    }
+  .nav-btn{
+  display: none;
+  }
+  .timer-container{
+    font-size: 15px;
+  }
+  .clock section{
+    width: 10px;
+    height: 10px;
+  }
 }
 
 
@@ -223,6 +267,8 @@ nav a:active{
 
 
 /* Domains and Event Styling */
+
+
 .particle{
   position: relative;
 }
