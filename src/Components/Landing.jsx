@@ -11,28 +11,27 @@ function Landing() {
   const [minutes, setMinutes] = React.useState();
   const [seconds, setSeconds] = React.useState();
   let interval;
-  const startTimer = ()=>{
-    const countDownDate = new Date("October 20, 2022").getTime();
-    interval = setInterval(()=>{
-        const currentDate = new Date().getTime();
-        const distance = countDownDate - currentDate;
-        const days = Math.floor(distance/86400000);
-        const hours = Math.floor((distance%86400000)/3600000);
-        const minutes = Math.floor((distance%3600000)/60000);
-        const seconds = Math.floor((distance%60000)/1000);
-        if(distance < 0){
-            clearInterval(interval.current);
-        }
-        else{
-            setDays(days);
-            setHours(hours);
-            setMinutes(minutes);
-            setSeconds(seconds);
-        }
+  const startTimer = () => {
+    const countDownDate = new Date("October 24, 2022").getTime();
+    interval = setInterval(() => {
+      const currentDate = new Date().getTime();
+      const distance = countDownDate - currentDate;
+      const days = Math.floor(distance / 86400000);
+      const hours = Math.floor((distance % 86400000) / 3600000);
+      const minutes = Math.floor((distance % 3600000) / 60000);
+      const seconds = Math.floor((distance % 60000) / 1000);
+      if (distance < 0) {
+        clearInterval(interval.current);
+      } else {
+        setDays(days);
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
+      }
     });
   };
-  React.useEffect(()=>{
-      startTimer();
+  React.useEffect(() => {
+    startTimer();
   });
   let landingRef = React.useRef(null);
   let tl = React.useRef(null);
